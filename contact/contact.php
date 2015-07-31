@@ -34,11 +34,11 @@ $headers .= 'From: <'.$email.'>' . "\r\n";
 
 $html = ' <table style="border: 1px solid #ccc; width: 50%;">
 						<tr style="background: #f9f9f9;">
-							<td><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /> <span style="position: absolute; top: 40px; left: 80px; font-family: "Open Sans", Arial, sans-serif; color: #777; display:inline-block;"><b style="color: #377AC0;">C</b>OLEGIO <b style="color: #377AC0;">O</b>QUETZA</span></td>
+							<td><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /> <span style="position: absolute; top: 40px; left: 80px; font-family: Open Sans, Arial, sans-serif; color: #777; display:inline-block;"><b style="color: #377AC0;">C</b>OLEGIO <b style="color: #377AC0;">O</b>QUETZA</span></td>
 						</tr>
 						<tr>
 							<td>
-								<div style="padding: 10px 10px 10px 15px; font-family: "Open Sans", Arial, sans-serif;">
+								<div style="padding: 10px 10px 10px 15px; font-family: Open Sans, Arial, sans-serif;">
 									<h4>Informaci&oacute;n del cliente: </h4>
 									<p><b>Nombre:</b> '.$name.'</p>
 									<p><b>Mail:</b> '.$email.'</p>
