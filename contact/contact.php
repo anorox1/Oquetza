@@ -23,10 +23,10 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: <'.$email.'>' . "\r\n";
 
-// $message = (!empty($message)) ? $message : null;
-// $name = (!empty($name)) ? $name : null;
-// $subject = (!empty($subject)) ? $subject : null;
-// $email = (!empty($email)) ? $email : "ubuntu@oquetza.mx"; 
+$message = (!empty($message)) ? $message : null;
+$name = (!empty($name)) ? $name : null;
+$subject = (!empty($subject)) ? $subject : null;
+$email = (!empty($email)) ? $email : "ubuntu@oquetza.mx"; 
 
 $html = '<html><body> <table style="border: 1px solid #ccc; width: 50%;">
 						<tr style="background: #f9f9f9;">
