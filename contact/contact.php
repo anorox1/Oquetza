@@ -21,8 +21,8 @@ $message = stripslashes($_POST['message']);
 
 $error = '';
 
-// $headers = "MIME-Version: 1.0" . "\r\n";
-$headers = "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= "From: ".$name." <".$email."> \r\n";
 $headers .= "Reply-To: ".WEBMASTER_EMAIL."\r\n";
 
@@ -31,7 +31,7 @@ $headers .= "Reply-To: ".WEBMASTER_EMAIL."\r\n";
 // $subject = (!empty($subject)) ? $subject : null;
 // $email = (!empty($email)) ? $email : "ubuntu@oquetza.mx"; 
 
-$message = '<html>
+$html = '<html>
 				<body>
 					<table style="border: 1px solid #ccc; width: 50%;">
 						<tr style="background: #f9f9f9;">
@@ -59,7 +59,7 @@ $message = '<html>
 
 if(!$error)
 {
-$mail = mail(WEBMASTER_EMAIL, $subject, $message, $headers);
+$mail = mail(WEBMASTER_EMAIL, $subject, $html, $headers);
 
 
 if($mail)
