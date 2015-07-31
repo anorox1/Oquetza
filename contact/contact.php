@@ -26,16 +26,16 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= "From: ".$name." <".$email."> \r\n";
 $headers .= "Reply-To: ".WEBMASTER_EMAIL."\r\n";
 
-$message = (!empty($message)) ? $message : null;
-$name = (!empty($name)) ? $name : null;
-$subject = (!empty($subject)) ? $subject : null;
-$email = (!empty($email)) ? $email : "ubuntu@oquetza.mx"; 
+// $message = (!empty($message)) ? $message : null;
+// $name = (!empty($name)) ? $name : null;
+// $subject = (!empty($subject)) ? $subject : null;
+// $email = (!empty($email)) ? $email : "ubuntu@oquetza.mx"; 
 
 $message = '<html>
 				<body>
 					<table style="border: 1px solid #ccc; width: 50%;">
 						<tr style="background: #f9f9f9;">
-							<td><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /> <span style="position: absolute; top: 40px; left: 80px; font-family: 'Open Sans', Arial, sans-serif; color: #777; display:inline-block;"><b style="color: #377AC0;">C</b>OLEGIO <b style="color: #377AC0;">O</b>QUETZA</span></td>
+							<td><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /> <span style="position: absolute; top: 40px; left: 80px; font-family: "Open Sans", Arial, sans-serif; color: #777; display:inline-block;"><b style="color: #377AC0;">C</b>OLEGIO <b style="color: #377AC0;">O</b>QUETZA</span></td>
 						</tr>
 						<tr>
 							<td>
@@ -59,10 +59,7 @@ $message = '<html>
 
 if(!$error)
 {
-$mail = mail(WEBMASTER_EMAIL, $subject, $message,
-     "From: ".$name." <".$email.">\r\n"
-    ."Reply-To: ".$email."\r\n"
-    ."X-Mailer: PHP/" . phpversion());
+$mail = mail(WEBMASTER_EMAIL, $subject, $message, $headers);
 
 
 if($mail)
