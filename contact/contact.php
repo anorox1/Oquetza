@@ -21,9 +21,9 @@ $message = stripslashes($_POST['message']);
 
 $error = '';
 
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-$headers .= "From: ".$name." <".$email."> \r\n";
+// $headers = "MIME-Version: 1.0" . "\r\n";
+// $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers = "From: ".$name." <".$email."> \r\n";
 $headers .= "Reply-To: ".WEBMASTER_EMAIL."\r\n";
 
 // $message = (!empty($message)) ? $message : null;
