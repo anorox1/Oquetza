@@ -33,10 +33,10 @@ $html = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	</head>
 	<body style="width:100%;">
-		<table style="border: 1px solid #ccc;">
+		<table style="border: 1px solid #ccc; width: 700px;">
 			<tr style="background: #f9f9f9;">
 				<td style="padding: 5px 0 0 15px; color: #777; font-size: 25px;"><b style="color: #377AC0;">C</b>OLEGIO <b style="color: #377AC0;">O</b>QUETZA</td>
-				<td><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /></td>
+				<td><center><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /></center></td>
 			</tr>
 			<tr>
 				<td style="padding: 10px 10px 10px 15px;">
