@@ -27,29 +27,33 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: <'.$email.'>' . "\r\n"; 
 
-$html = '<html>
-			<body>
-				<table style="border: 1px solid #ccc; width: 100%;">
-					<tr style="background: #f9f9f9;">
-						<td style="padding-left: 15px; color: #777;"><span><b style="color: #377AC0;">C</b>OLEGIO <b style="color: #377AC0;">O</b>QUETZA</span></td>
-						<td><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /></td>
-					</tr>
-					<tr>
-						<td style="padding: 10px 10px 10px 15px;">
-							<h3>Informaci&oacute;n del cliente: </h3>
-							<p><b>Nombre:</b> '.$name.'</p>
-							<p><b>Mail:</b> '.$email.'</p>
-							<p>'.$message.'</p>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2">
-							<div style="width: 100%; height: 50px; background: #377AC0;"></div>
-						</td>
-					</tr>
-				</table>
-			</body>
-		</html>';
+$html = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body style="width:100%;">
+		<table style="border: 1px solid #ccc;">
+			<tr style="background: #f9f9f9;">
+				<td style="padding: 5px 0 0 15px; color: #777; font-size: 25px;"><b style="color: #377AC0;">C</b>OLEGIO <b style="color: #377AC0;">O</b>QUETZA</td>
+				<td><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px 10px 10px 15px;">
+					<h3>Informaci&oacute;n del cliente: </h3>
+					<p><b>Nombre:</b> '.$name.'</p>
+					<p><b>Mail:</b> '.$email.'</p>
+					<p>'.$message.'</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div style="width: 100%; height: 50px; background: #377AC0;"></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>';
 
 if(!$error)
 {
