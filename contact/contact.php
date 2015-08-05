@@ -32,7 +32,7 @@ $html = '<html>
 				<table style="border: 1px solid #ccc; width: 50%;">
 					<tr style="background: #f9f9f9;">
 						<td><span style="padding-left: 15px; font-family: "Open Sans", Arial, sans-serif; color: #777; display:inline-block;"><b style="color: #377AC0;">C</b>OLEGIO <b style="color: #377AC0;">O</b>QUETZA</span></td>
-						<td><img src="img/logo.png" width="50px" style="padding: 10px;" /></td>
+						<td><img src="http://www.oquetza.mx/img/logo.png" width="50px" style="padding: 10px;" /></td>
 					</tr>
 					<tr>
 						<td>
