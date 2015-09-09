@@ -1,5 +1,6 @@
 /* ==== Google font ==== */
 @import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700');
+@import url(https://fonts.googleapis.com/css?family=Cookie|Yesteryear|Averia+Gruesa+Libre);
 
 /* === prettify === */
 @import url('../js/google-code-prettify/prettify.css');
@@ -16,7 +17,8 @@
 ==================================== */
 
 body {
-	font-family:'Open Sans', Arial, sans-serif;
+	/*font-family:'Open Sans', Arial, sans-serif;*/
+	font-family: 'Averia Gruesa Libre', cursive;
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
@@ -32,7 +34,8 @@ a:active {
 }
 
 h1,h2, h3, h4, h5, h6 {
-	font-family:'Open Sans', Arial, sans-serif;
+	/*font-family:'Open Sans', Arial, sans-serif;*/
+	font-family: 'Averia Gruesa Libre', cursive;
 	font-weight:700;
 	line-height:1.1em;
 	color:#333;
@@ -72,6 +75,10 @@ User Adds
 ==================================== */
 .home-text {
 	color: #032F47;
+}
+
+.cookie {
+	font-size: 36px;
 }
 
 /* Card */
