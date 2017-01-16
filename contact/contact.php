@@ -14,7 +14,8 @@ if($post)
 {
 
 $name = stripslashes($_POST['name']);
-$email = trim($_POST['email']);
+$to_email = trim($_POST['email']);
+$phone = trim($_POST['phone']);
 $subject = stripslashes($_POST['subject']);
 $message = stripslashes($_POST['message']);
 
@@ -42,7 +43,8 @@ $html = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR
 				<td style="padding: 10px 10px 10px 15px;">
 					<h3>Informaci&oacute;n del cliente: </h3>
 					<p><b>Nombre:</b> '.$name.'</p>
-					<p><b>Mail:</b> '.$email.'</p>
+					<p><b>Tel&eacute;fono:</b> '.$phone.'</p>
+					<p><b>Mail:</b> '.$to_email.'</p>
 					<p>'.$message.'</p>
 				</td>
 			</tr>
