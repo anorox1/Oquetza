@@ -12,17 +12,32 @@
 @import url('overwrite.css');
 @import url('animate.css');
 
+@font-face {
+    font-family: "Baro Neue Black";
+    src: url(../fonts/Baro_Neue_Black.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "PraxisEF";
+    src: url(../fonts/PraxisEF-Bold.ttf) format("truetype");
+}
+
 /* ===================================
 1. General
 ==================================== */
 
 body {
 	/*font-family:'Open Sans', Arial, sans-serif;*/
-	font-family: 'Averia Gruesa Libre', cursive;
+	font-family: 'PraxisEF';
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
 	color:#656565;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	margin-left: -65px;
+	margin-top: -16px;
 }
 
 a:active {
@@ -35,7 +50,7 @@ a:active {
 
 h1,h2, h3, h4, h5, h6 {
 	/*font-family:'Open Sans', Arial, sans-serif;*/
-	font-family: 'Averia Gruesa Libre', cursive;
+	font-family: 'PraxisEF';
 	font-weight:700;
 	line-height:1.1em;
 	color:#333;
@@ -74,7 +89,11 @@ h1,h2, h3, h4, h5, h6 {
 User Adds
 ==================================== */
 .home-text {
-	color: #032F47;
+	color: #314C9D;
+}
+
+.home-text.first {
+	margin-left: -35px;
 }
 
 .cookie {
@@ -133,7 +152,7 @@ User Adds
   padding: 16px;
 }
 .card .card-action a {
-  color: #377AC0;
+  color: #314C9D;
   margin-right: 16px;
   transition: color 0.3s ease;
   text-transform: uppercase;
@@ -153,15 +172,14 @@ User Adds
 }
 
 .img-logo {
-	margin-top: -10px;
-	width: 115px;
+	width: 185px;
 }
 
 ul.unstyled > li {
 	margin-bottom: 4.5px;
 }
 
-.preescolar {
+/*.preescolar {
 	background: red !important;
 	color: white !important;
 }
@@ -247,7 +265,7 @@ ul.unstyled > li {
 .preparatoria-back:focus,
 .preparatoria-back:active {
 	background: #3F2EA0 !important;
-}
+}*/
 
 .requisitos > li {
 	font-size: 16px;
@@ -313,6 +331,7 @@ header .navbar {
 	letter-spacing: -1px;
     margin-top: 30px;
     padding: 0 0 0 15px;
+    font-family: 'Baro Neue Black';
 }
 
 
@@ -639,7 +658,7 @@ section.callaction {
 ==================================== */
 
 #inner-headline{
-	background:#377AC0;
+	background:#314C9D;
 	position:relative;
 	margin:0;
 	padding:0;
@@ -925,7 +944,8 @@ ul.portfolio-categ li.active a:hover, ul.portfolio-categ li a:hover,ul.portfolio
 blockquote {
 	font-size:16px;
 	font-weight:400;
-	font-family:'Noto Serif', serif;
+	/*font-family:'Noto Serif', serif;*/
+	font-family: 'PraxisEF';
 	font-style:italic;
 	padding-left:0;
 	color:#a2a2a2;
@@ -944,7 +964,8 @@ blockquote cite a:visited 				{ color:#555; }
 .pullquote-left {
 	display:block;
 	color:#a2a2a2;
-	font-family:'Noto Serif', serif;
+	/*font-family:'Noto Serif', serif;*/
+	font-family: 'PraxisEF';
 	font-size:14px;
 	line-height:1.6em;
 	padding-left:20px;
@@ -953,7 +974,8 @@ blockquote cite a:visited 				{ color:#555; }
 .pullquote-right {
 	display:block;
 	color:#a2a2a2;
-	font-family:'Noto Serif', serif;
+	/*font-family:'Noto Serif', serif;*/
+	font-family: 'PraxisEF';
 	font-size:14px;
 	line-height:1.6em;
 	padding-right:20px;
@@ -1230,7 +1252,8 @@ border: 1px solid #e6e6e6;
 	margin-top:10px;
 	color:#fff;
 
-	font-family:'Noto Serif', serif;
+	font-family: 'PraxisEF';
+	/*font-family:'Noto Serif', serif;*/
 }
 
 .pricing-box-alt .icon .price-circled {
@@ -1354,7 +1377,8 @@ article .post-heading h3 a:hover {
 .post-quote blockquote {
 	font-size:16px;
 	color:#999;
-	font-family:'Noto Serif', serif;
+	/*font-family:'Noto Serif', serif;*/
+	font-family: 'PraxisEF';
 	font-style:italic;
 	line-height:1.6em;
 }
