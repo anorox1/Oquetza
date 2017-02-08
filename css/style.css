@@ -596,11 +596,16 @@ section.callaction {
 .box-gray  {
 	background: #f8f8f8;
 	padding: 20px 20px 30px;
-	height: 278px;
+	height: 320px;
 }
 .box-gray  h4,.box-gray  i {
 	margin-bottom: 20px;
+	min-height: 38px;
 }
+.box-gray  img {
+	margin-bottom: 8px;
+}
+
 .box-bottom {
 	padding: 20px 0;
 	text-align: center;
